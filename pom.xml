@@ -21,20 +21,11 @@
   </licenses>
 
   <repositories>
+  
     <repository>
       <id>repo1.maven</id>
       <name>Maven Main Repository</name>
       <url>http://repo1.maven.org/maven2</url>
-    </repository>
-    <repository>
-      <id>project.embedded.module</id>
-      <name>Project Embedded Repository</name>
-      <url>file://${basedir}/embedded-repo</url>
-    </repository>
-    <repository>
-      <id>scala-tools-snapshots</id>
-      <name>Scala-Tools Maven2 Snapshot Repository</name>
-      <url>http://scala-tools.org/repo-snapshots</url>
     </repository>
     <repository>
       <id>scala-tools</id>
@@ -266,19 +257,16 @@
       <version>0.7.4</version>
     </dependency>
     <dependency>
-      <groupId>sjson.json</groupId>
-      <artifactId>sjson</artifactId>
-      <version>0.7</version>
+      <groupId>org.apache.httpcomponents</groupId>
+      <artifactId>httpclient</artifactId>
+      <version>4.0.1</version>
+      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
-      <artifactId>httpclient</artifactId>
-      <version>4.0-beta1</version>
-    </dependency>
-      <dependency>
-      <groupId>httpcomponents-httpcore</groupId>
-      <artifactId>jakarta-httpcore</artifactId>
-      <version>4.0-alpha2</version>
+      <artifactId>httpcore</artifactId>
+      <version>4.0.1</version>
+      <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>commons-logging</groupId>
@@ -295,7 +283,7 @@
     <dependency>
       <groupId>org.scalatest</groupId>
       <artifactId>scalatest</artifactId>
-      <version>1.2-for-scala-2.8.0.final-SNAPSHOT</version>
+      <version>1.2</version>
       <scope>test</scope>
     </dependency>
     <dependency>
